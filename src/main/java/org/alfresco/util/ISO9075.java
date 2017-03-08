@@ -51,8 +51,7 @@ public class ISO9075
     /*
      * Digits used string encoding
      */
-    private static final char[] DIGITS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
-            'f' };
+    private static final char[] DIGITS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
 
     /**
      * Private constructor
@@ -69,7 +68,7 @@ public class ISO9075
         {
             return true;
         }
-        else  if('A' <= c && c <= 'Z' )
+        else  if(c <= 'Z' && 'A' <= c)
         {
             return true;
         }
@@ -396,4 +395,10 @@ public class ISO9075
         }
         return builder.toString();
     }
+
+    public static String someAdditionalMethod()
+    {
+        return "Hello, world!";
+    }
+
 }

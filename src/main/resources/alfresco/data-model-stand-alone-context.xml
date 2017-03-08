@@ -175,6 +175,8 @@
         <property name="cmisDictionaryService"     ref="OpenCMISDictionaryService" />
     </bean>
     
+    <!-- some additional comment -->
+
     <bean name="immutableSingletonCache" class="org.alfresco.repo.cache.MemoryCache" />
     
     <bean id="OpenCMISDictionaryService" class="org.alfresco.opencmis.dictionary.CMISStrictDictionaryService" init-method="init">
